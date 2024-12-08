@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scraped Results</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Scraped Results</h1>
+
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% else %}
+            <p><strong>URL:</strong> {{ url }}</p>
+            <p><strong>Your Query:</strong> {{ message }}</p>
+            <p><strong>Generated Response:</strong> {{ response }}</p>
+
+            <h2>Scraped Content:</h2>
+            <textarea rows="30" cols="100" readonly>{{ content }}</textarea>
+        {% endif %}
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>

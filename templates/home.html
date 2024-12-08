@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Web Scraper</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced Web Scraper</h1>
+        <form action="/scrape" method="post">
+            <label for="url">Enter URL to scrape:</label>
+            <input type="text" id="url" name="url" required placeholder="https://example.com">
+
+            <label for="message">Your Query/Message:</label>
+            <textarea id="message" name="message" required placeholder="Enter your query or instructions"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
